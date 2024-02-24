@@ -1,0 +1,9 @@
+math
+multiprocessing
+time
+opencv-python  # This is for 'cv2'
+pyciede2000
+Pillow  # This is for 'PIL'
+numpy
+xml.etree.ElementTree  # This is part of the standard library, no need to include it in requirements.txt
+numba
