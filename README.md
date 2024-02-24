@@ -56,6 +56,6 @@ For any queries regarding the implementation, please contact:
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License - see the [LICENSE]([LICENSE](https://github.com/wenlidu123/Digital-Printing-Streak-Defect-Compensation/blob/main/LISENSE)https://github.com/wenlidu123/Digital-Printing-Streak-Defect-Compensation/blob/main/LISENSE) file for details.
 
 
