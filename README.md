@@ -1,1 +1,1 @@
-# Digital-Printing-Streak-Defect-Compensation
+# Compensation for Stripe Defects in Digital Inkjet Printing
