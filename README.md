@@ -18,8 +18,11 @@ The research addresses the issue of banding in print products caused by nozzle f
 
 To run the compensation algorithm, ensure you have Python 3.6 or later installed. Clone this repository and install the required dependencies:
 bash
+
 git clone [https://github.com/your-repository/inkjet-printing-compensation.git](https://github.com/wenlidu123/Digital-Printing-Streak-Defect-Compensation)
+
 cd Digital-Printing-Streak-Defect-Compensation
+
 pip install -r requirements.txt
 ## Usage
 
