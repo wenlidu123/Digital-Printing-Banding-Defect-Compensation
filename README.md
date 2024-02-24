@@ -38,7 +38,7 @@ The effectiveness of the proposed compensation technique has been validated thro
 
 ### Monotonous Color Structure Image
 
-[[![Monotonous Color Structure Image](path/to/monotonous_color_structure_image.png)](https://github.com/wenlidu123/Digital-Printing-Streak-Defect-Compensation/tree/main/Experimental%20images/Monotonous Color Structure Image.png)](https://github.com/wenlidu123/Digital-Printing-Streak-Defect-Compensation/blob/main/Experimental%20images/Monotonous%20Color%20Structure%20Image.png)
+Experimental images/Monotonous Color Structure Image.png
 
 ## Citation
 
