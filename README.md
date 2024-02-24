@@ -34,11 +34,11 @@ The effectiveness of the proposed compensation technique has been validated thro
 
 ### Complex Color Structure Image
 
-![Complex Color Structure Image](path/to/complex_color_structure_image.png)
+[![Complex Color Structure Image](path/to/complex_color_structure_image.png)](https://github.com/wenlidu123/Digital-Printing-Streak-Defect-Compensation/tree/main/Experimental%20images/Complex Color Structure Image.png)
 
 ### Monotonous Color Structure Image
 
-![Monotonous Color Structure Image](path/to/monotonous_color_structure_image.png)
+[![Monotonous Color Structure Image](path/to/monotonous_color_structure_image.png)](https://github.com/wenlidu123/Digital-Printing-Streak-Defect-Compensation/tree/main/Experimental%20images/Monotonous Color Structure Image.png)
 
 ## Citation
 
