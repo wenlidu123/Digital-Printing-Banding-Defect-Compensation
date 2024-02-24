@@ -46,7 +46,7 @@ def measure_time(func):
     return wrapper
 
 
-def compensation_process(image_path, XML_FILE):
+def compensation_process(image_path, XML_FILEs):
     '''Compensate the damaged nozzles of a printer by applying color correction.
 
     Parameters:
@@ -602,11 +602,33 @@ def cmyk2lab3(cmyk_matrix):
 
 # Function for Lab to CMYK conversion
 def lab2cmyk(lab_matrix):
+    # Convert a LAB matrix to a PIL Image in LAB mode
     lab_image = Image.fromarray(lab_matrix, mode='LAB')
-    # Load ICC profiles for CMYK to Lab conversion
+    
+    # Load ICC profiles for CMYK to RGB conversion
     cmyk_profile = ImageCms.getOpenProfile("Photoshop5DefaultCMYK.icc")
     lab_profile = ImageCms.getOpenProfile("lab8.icm")
 
-    # Create a transform from Lab to CMYK
+    # Create a color transformation from LAB to CMYK
+    lab_to_cmyk_transform = ImageCms.buildTransform(lab_profile, cmyk_profile, 'LAB', 'CMYK')
+    
+    # Apply the color space transformation
+    converted_image = ImageCms.applyTransform(lab_image, lab_to_cmyk_transform)
+    
+    # Convert the transformed image to a numpy array
+    cmykmatrix = np.array(converted_image)
+    return cmykmatrix
+
+
+if __name__ == '__main__':
+    # Define XML files containing true line positions for each color channel
+    XML_FILEs = ['C_ture_line_position.xml', 'M_ture_line_position.xml', 'Y_ture_line_position.xml',
+                 'K_ture_line_position.xml']
+    
+    # Path to the halftone CMYK test image
+    halftone_cyan_testimg_tif_path = 'CMYKhalftone.tif'
+    
+    # Call the compensation process function with the test image path and XML files
+    compensation_process(halftone_cyan_testimg_tif_path, XML_FILEs)
     lab_to_cmyk_transform = ImageCms.buildTransform(lab_profile, cmyk_profile, 'LAB', 'CMYK')
     # Apply the color
